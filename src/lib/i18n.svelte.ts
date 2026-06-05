@@ -9,7 +9,7 @@ export const translations = {
         drDetail: 'Dominican Republic 🇩🇴 · ',
         ownership: 'Ownership structure',
         ownerPresident: 'Owner · President',
-        owner: 'Owner',
+        ownerDirector: 'Owner · Director',
     },
     es: {
         metaLine: 'Panamá 🇵🇦 · Sociedad N.º 155784730 · ',
@@ -19,7 +19,7 @@ export const translations = {
         drDetail: 'República Dominicana 🇩🇴 · ',
         ownership: 'Estructura de propiedad',
         ownerPresident: 'Propietario · Presidente',
-        owner: 'Propietario',
+        ownerDirector: 'Propietario · Director',
     },
 } as const;
 

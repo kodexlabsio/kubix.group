@@ -25,7 +25,7 @@
             <div class="name">
                 <a href="https://www.linkedin.com/in/dcrdev/" target="_blank" rel="noopener">Dom Robinson</a>
             </div>
-            <div class="role">{t.owner}</div>
+            <div class="role">{t.ownerDirector}</div>
         </div>
     </li>
 </ul>
