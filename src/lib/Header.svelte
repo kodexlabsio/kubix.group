@@ -10,7 +10,8 @@
     <div>
         <h1>Kubix Inc.</h1>
         <p class="meta">
-            {t.metaLine}<a href="mailto:corporate@kubix.group">corporate@kubix.group</a>
+            {t.metaLine}
+            <a href="mailto:corporate@kubix.group">corporate@kubix.group</a>
         </p>
         <p class="intro">{t.intro}</p>
     </div>

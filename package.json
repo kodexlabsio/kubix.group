@@ -19,11 +19,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "lint": "eslint ${1:-.}",
+    "format": "prettier --write --html-whitespace-sensitivity ignore ${1:-.}",
+    "format:check": "prettier --check --html-whitespace-sensitivity ignore ${1:-.}",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@eslint/js": "^10.0.1",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@tsconfig/svelte": "^5.0.8",
@@ -32,6 +35,8 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.19.0",
     "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
     "prettier": "^3.8.3",
     "prettier-plugin-organize-imports": "^4.3.0",
     "prettier-plugin-svelte": "^4.1.0",

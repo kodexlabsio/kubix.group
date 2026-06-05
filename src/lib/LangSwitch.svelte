@@ -3,8 +3,8 @@
 </script>
 
 <div class="lang-switch">
-    <button type="button" class:active={i18n.lang === 'en'} onclick={() => setLang('en')}> EN </button>
-    <button type="button" class:active={i18n.lang === 'es'} onclick={() => setLang('es')}> ES </button>
+    <button type="button" class:active={i18n.lang === 'en'} onclick={() => setLang('en')}>EN</button>
+    <button type="button" class:active={i18n.lang === 'es'} onclick={() => setLang('es')}>ES</button>
 </div>
 
 <style>

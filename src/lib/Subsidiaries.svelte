@@ -12,7 +12,8 @@
         <div>
             <div class="name">Kodex Labs Ltd</div>
             <div class="detail">
-                {t.ukDetail}<a href="https://kodexlabs.io">kodexlabs.io</a>
+                {t.ukDetail}
+                <a href="https://kodexlabs.io">kodexlabs.io</a>
             </div>
         </div>
     </li>
@@ -21,7 +22,8 @@
         <div>
             <div class="name">Kodex Labs S.R.L</div>
             <div class="detail">
-                {t.drDetail}<a href="https://kodexlabs.do">kodexlabs.do</a>
+                {t.drDetail}
+                <a href="https://kodexlabs.do">kodexlabs.do</a>
             </div>
         </div>
     </li>
