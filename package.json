@@ -10,7 +10,7 @@
     "url": "git+https://github.com/kodexlabs-io/kubix.group.git"
   },
   "author": "Kubix Inc.",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=22"
   },
