@@ -7,7 +7,7 @@
   "homepage": "https://kubix.group",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kodexlabs-io/kubix.group.git"
+    "url": "git+https://github.com/kodexlabsio/kubix.group.git"
   },
   "author": "Kubix Inc.",
   "license": "UNLICENSED",
