@@ -42,7 +42,20 @@ The site is served as separate, statically generated pages per language so each 
 
 Each language page (`en/index.html`, `es/index.html`) declares its own translated `<title>`/description, a self-referencing `<link rel="canonical">`, and reciprocal `<link rel="alternate" hreflang>` tags (including `x-default`). Vite builds all three entry points (configured in `vite.config.ts`).
 
-The active language is resolved from the URL in `src/main.ts`; UI strings live in `src/lib/i18n.svelte.ts`, and the language switcher (`src/lib/LangSwitch.svelte`) navigates between the `/en/` and `/es/` routes.
+The active language is resolved from the URL in `src/main.ts` via `getLangFromPath` (which matches the first path segment exactly); UI strings live in `src/lib/i18n/i18n.svelte.ts`, and the language switcher (`src/lib/components/LangSwitch.svelte`) navigates between the `/en/` and `/es/` routes.
+
+## Project structure
+
+```
+src/
+├── App.svelte            # Root component and layout
+├── main.ts               # Entry point; resolves language and mounts the app
+├── app.css               # Global styles and CSS custom properties
+└── lib/
+    ├── assets/           # Logos and avatars
+    ├── components/       # UI components (Header, Card, LangSwitch, …)
+    └── i18n/             # Language state, translations, and path resolution
+```
 
 ## Code style
 

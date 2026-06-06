@@ -23,8 +23,20 @@ export const translations = {
     },
 } as const;
 
-export const i18n = $state<{ lang: Lang }>({ lang: 'en' });
+export const DEFAULT_LANG: Lang = 'en';
 
+export const langs = Object.keys(translations) as Lang[];
+
+export const i18n = $state<{ lang: Lang }>({ lang: DEFAULT_LANG });
+
+/**
+ * Resolves the active language from the first segment of a URL path.
+ *
+ * Matches the segment exactly (e.g. `/es/`, `/es`) so unrelated paths such as
+ * `/establishment` are not mistaken for the `es` locale. Falls back to
+ * {@link DEFAULT_LANG} when no known locale segment is present.
+ */
 export function getLangFromPath(pathname: string): Lang {
-    return pathname.startsWith('/es') ? 'es' : 'en';
+    const segment = pathname.split('/').find(Boolean);
+    return langs.find(lang => lang === segment) ?? DEFAULT_LANG;
 }

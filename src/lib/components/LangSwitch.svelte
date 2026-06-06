@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { i18n } from './i18n.svelte';
+    import { i18n } from '../i18n/i18n.svelte';
 </script>
 
 <nav class="lang-switch" aria-label="Language">

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import kubixLogo from './assets/kubix-logo.svg';
-    import { i18n, translations } from './i18n.svelte';
+    import kubixLogo from '../assets/kubix-logo.svg';
+    import { i18n, translations } from '../i18n/i18n.svelte';
     import QrCode from './QrCode.svelte';
 
     let { pageUrl }: { pageUrl: string } = $props();

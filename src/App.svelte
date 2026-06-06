@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Header from './lib/Header.svelte';
-    import { i18n } from './lib/i18n.svelte';
-    import LangSwitch from './lib/LangSwitch.svelte';
-    import Owners from './lib/Owners.svelte';
-    import QrCode from './lib/QrCode.svelte';
-    import Subsidiaries from './lib/Subsidiaries.svelte';
+    import Header from './lib/components/Header.svelte';
+    import LangSwitch from './lib/components/LangSwitch.svelte';
+    import Owners from './lib/components/Owners.svelte';
+    import QrCode from './lib/components/QrCode.svelte';
+    import Subsidiaries from './lib/components/Subsidiaries.svelte';
+    import { i18n } from './lib/i18n/i18n.svelte';
 
     const pageUrl = $derived(`https://kubix.group/${i18n.lang}/`);
     let mainHeight = $state(0);

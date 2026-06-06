@@ -26,7 +26,10 @@
         </script>
         <script>
             (function () {
-                var prefersEs = (navigator.language || '').toLowerCase().indexOf('es') === 0;
+                var prefs = navigator.languages || [navigator.language || ''];
+                var prefersEs = prefs.some(function (tag) {
+                    return tag.toLowerCase().split('-')[0] === 'es';
+                });
                 location.replace(prefersEs ? '/es/' : '/en/');
             })();
         </script>
