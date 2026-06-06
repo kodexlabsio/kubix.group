@@ -28,5 +28,5 @@ export const i18n = $state<{ lang: Lang }>({ lang: 'en' });
 
 /** Resolves the active language from a URL pathname (e.g. /es/ -> 'es'). */
 export function getLangFromPath(pathname: string): Lang {
-    return pathname.startsWith('/es') ? 'es' : 'en';
+    return pathname === '/es' || pathname.startsWith('/es/') ? 'es' : 'en';
 }
