@@ -9,11 +9,12 @@
 
     let typed = $state('');
     let typing = $state(false);
+    let hasTyped = false;
 
     $effect(() => {
         const full = t.intro;
 
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        if (hasTyped || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             typed = full;
             typing = false;
             return;
@@ -30,6 +31,7 @@
                 if (i >= full.length) {
                     clearInterval(step);
                     typing = false;
+                    hasTyped = true;
                 }
             }, 22);
         }, 250);
