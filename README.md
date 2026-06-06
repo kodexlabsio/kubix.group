@@ -20,13 +20,13 @@ Landing page for Kubix Inc., the Panama holding company that owns Kodex Labs in 
 ## Development
 
 ```bash
-npm install        # install dependencies
-npm run dev        # start the dev server
-npm run build      # build for production (outputs to dist/)
-npm run preview    # preview the production build
-npm run check      # type-check the project
-npm run lint       # lint with ESLint
-npm run format     # format with Prettier
+npm i                # install dependencies
+npm run dev          # start the dev server
+npm run build        # build for production (outputs to dist/)
+npm run preview      # preview the production build
+npm run check        # type-check the project
+npm run lint         # lint with ESLint
+npm run format       # format with Prettier
 npm run format:check # verify formatting without writing
 ```
 
