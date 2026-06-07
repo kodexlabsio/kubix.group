@@ -2,6 +2,8 @@ export type Lang = 'en' | 'es';
 
 export const translations = {
     en: {
+        htmlLang: 'en-GB',
+        title: 'Kubix | Building Technology & Real Estate Ventures',
         metaLine: 'Panama 🇵🇦 · Company No. 155784730 · ',
         intro: 'Kubix Inc. is a Panama holding company that owns Kodex Labs Ltd (United Kingdom) and Kodex Labs S.R.L (Dominican Republic).',
         subsidiaries: 'Subsidiaries',
@@ -12,6 +14,8 @@ export const translations = {
         ownerDirector: 'Owner · Director',
     },
     es: {
+        htmlLang: 'es',
+        title: 'Kubix | Creando Empresas de Tecnología e Inmobiliarias',
         metaLine: 'Panamá 🇵🇦 · Sociedad N.º 155784730 · ',
         intro: 'Kubix Inc. es una sociedad holding panameña propietaria de Kodex Labs Ltd (Reino Unido) y Kodex Labs S.R.L (República Dominicana).',
         subsidiaries: 'Filiales',

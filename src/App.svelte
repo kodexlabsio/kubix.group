@@ -4,9 +4,15 @@
     import Owners from './lib/components/Owners.svelte';
     import QrCode from './lib/components/QrCode.svelte';
     import Subsidiaries from './lib/components/Subsidiaries.svelte';
-    import { i18n } from './lib/i18n/i18n.svelte';
+    import { i18n, translations } from './lib/i18n/i18n.svelte';
 
     const pageUrl = $derived(`https://kubix.group/${i18n.lang}/`);
+
+    $effect(() => {
+        const t = translations[i18n.lang];
+        document.title = t.title;
+        document.documentElement.lang = t.htmlLang;
+    });
     let mainHeight = $state(0);
 
     let glowX = $state(50);
