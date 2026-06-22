@@ -15,7 +15,7 @@ Landing page for Kubix Inc., the Panama holding company that owns Kodex Labs in 
 | --- | --- | --- | --- |
 | Kubix Inc. | Panama | 155784730 | https://kubix.group |
 | Kodex Labs Ltd | United Kingdom | 16813371 | https://kodexlabs.io |
-| Kodex Labs S.R.L | Dominican Republic | 00000000 | https://kodexlabs.do |
+| Kodex Labs S.R.L | Dominican Republic | 937429 | https://kodexlabs.do |
 
 ## Development
 
