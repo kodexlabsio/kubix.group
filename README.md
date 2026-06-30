@@ -11,11 +11,19 @@ Landing page for Kubix Inc., the Panama holding company that owns Kodex Labs in 
 
 ## Group structure
 
+### Subsidiaries
+
 | Entity | Jurisdiction | Company number | Site |
 | --- | --- | --- | --- |
 | Kubix Inc. | Panama | 155784730 | https://kubix.group |
 | Kodex Labs Ltd | United Kingdom | 16813371 | https://kodexlabs.io |
 | Kodex Labs S.R.L | Dominican Republic | 937429 | https://kodexlabs.do |
+
+### Joint ventures
+
+| Entity | Jurisdiction | Company number | Stake | Site |
+| --- | --- | --- | --- | --- |
+| Hyperior Limited | United Kingdom | 17309416 | 50% Kodex Labs Ltd · 50% Atlantic Cedar Limited | https://hyperior.io |
 
 ## Development
 

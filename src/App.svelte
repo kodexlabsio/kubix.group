@@ -1,6 +1,7 @@
 <script lang="ts">
     import Header from './lib/components/Header.svelte';
     import LangSwitch from './lib/components/LangSwitch.svelte';
+    import JointVentures from './lib/components/JointVentures.svelte';
     import Owners from './lib/components/Owners.svelte';
     import QrCode from './lib/components/QrCode.svelte';
     import Subsidiaries from './lib/components/Subsidiaries.svelte';
@@ -65,6 +66,7 @@
     <main bind:clientHeight={mainHeight}>
         <Header {pageUrl} />
         <Subsidiaries />
+        <JointVentures />
         <Owners />
     </main>
 
