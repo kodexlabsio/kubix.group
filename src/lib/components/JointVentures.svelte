@@ -14,7 +14,15 @@
             {t.hyperiorDetail}
             <a href="https://hyperior.io" target="_blank" rel="noopener">hyperior.io</a>
         </div>
-        <div class="stake">{t.hyperiorStake}</div>
+        <div class="stake">
+            50% Kodex Labs Ltd &middot; 50% <a
+                href="https://www.atlanticcedar.com"
+                target="_blank"
+                rel="noopener"
+            >
+                Atlantic Cedar Limited
+            </a>
+        </div>
     </Card>
 </ul>
 
@@ -52,10 +60,26 @@
         text-decoration: underline;
     }
 
+    :global(.card:has(.stake a:hover)) .detail a {
+        text-decoration: none;
+    }
+
     .stake {
         color: var(--text-dim);
         font-size: 0.8rem;
         margin-top: 0.15rem;
         font-style: italic;
+    }
+
+    .stake a {
+        position: relative;
+        z-index: 1;
+        color: var(--accent);
+        text-decoration: none;
+        transition: text-decoration 0.2s var(--ease);
+    }
+
+    .stake a:hover {
+        text-decoration: underline;
     }
 </style>
