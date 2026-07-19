@@ -50,7 +50,7 @@
     "vite-plugin-html-minifier-terser": "^3.8.0"
   },
   "dependencies": {
-    "@fontsource-variable/manrope": "^5.2.8",
+    "@fontsource-variable/manrope": "^5.3.0",
     "qrcode": "^1.5.4"
   }
 }
